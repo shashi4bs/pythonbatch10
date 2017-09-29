@@ -1,0 +1,9 @@
+# import the smtplib module. It should be included in Python by default
+import smtplib
+import insert_file
+#read in atemplate file and return a template object made from its contents
+insert_file.read_template('message.txt')
+# set up the SMTP server
+s = smtplib.SMTP(host='your_host_address_here', port=your_port_here)
+s.starttls()
+s.login(MY_ADDRESS, PASSWORD)
