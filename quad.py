@@ -15,7 +15,7 @@ def quad(a,b,c):
           print('root: ',root)
      if dis<0:
           rootreal=(-b)/(2*a)
-          rootimg=(math.sqrt(-dis))
+          rootimg=(math.sqrt(-dis))/(2*a)
           print('root1: ',rootreal,"+i",rootimg)
           print('root2: ',rootreal,"-i",rootimg)
 print('enter coefficients')
