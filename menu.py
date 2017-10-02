@@ -10,8 +10,9 @@ class menu:
         name = item_name
         price = item_price
         '''
-        self.name.append(name)
-        self.price.append(price)
+        if name not in self.name:
+            self.name.append(name)
+            self.price.append(price)
     def show(self):
         for i in range(len(self.name)):
             print(self.name[i],self.price[i])
